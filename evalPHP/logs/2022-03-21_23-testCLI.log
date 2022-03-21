@@ -1,0 +1,264 @@
+[21-03-2022 20:03:26] :: INICIA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:03:26] :: TERMINA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:03:26] :: DURACIÓN : 0.0023031234741211 s
+[21-03-2022 20:07:05] :: INICIA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:07:05] :: TERMINA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:07:05] :: DURACIÓN : 0.0016541481018066 s
+[21-03-2022 20:08:14] :: INICIA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:08:14] :: TERMINA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:08:14] :: DURACIÓN : 0.0017378330230713 s
+[21-03-2022 20:08:53] :: INICIA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:08:53] :: TERMINA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:08:53] :: DURACIÓN : 0.0016510486602783 s
+[21-03-2022 20:12:50] :: INICIA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:12:50] :: TERMINA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:12:50] :: DURACIÓN : 0.005173921585083 s
+[21-03-2022 20:12:50] :: DURACIÓN TOTAL : 0.011128187179565 s
+[21-03-2022 20:28:48] :: INICIA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:28:48] :: TERMINA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:28:48] :: DURACIÓN : 0.055259943008423 s
+[21-03-2022 20:38:26] :: INICIA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:38:26] :: TERMINA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:38:26] :: DURACIÓN : 0.0059421062469482 s
+[21-03-2022 20:40:55] :: INICIA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:40:55] :: TERMINA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:40:55] :: DURACIÓN : 0.0054969787597656 s
+[21-03-2022 20:40:55] :: TERMINA QUERY :: SELECT 
+            alumno.id, 
+            CONCAT(usuario_detalle.nombre_usuario, ' ', usuario_detalle.apellido_paterno, ' ', usuario_detalle.apellido_materno) as nombre_completo, 
+            usuario_detalle.rut,
+            usuario_detalle.nacimiento,
+            usuario_detalle.correo,
+            usuario_detalle.telefono
+            FROM alumno 
+            INNER JOIN usuario ON usuario.id = alumno.alumno
+            INNER JOIN usuario_detalle ON usuario_detalle.idusuario = usuario.id
+            WHERE alumno.habilitado = :habilitado LIMIT 10;
+[21-03-2022 20:40:55] :: DURACIÓN : 0.036324977874756 s
+[21-03-2022 20:40:55] :: DURACIÓN TOTAL : 0.10658407211304 s
+[21-03-2022 20:42:41] :: INICIA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:42:41] :: TERMINA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:42:41] :: DURACIÓN : 0.0055670738220215 s
+[21-03-2022 20:42:41] :: TERMINA QUERY :: SELECT 
+            alumno.id, 
+            CONCAT(usuario_detalle.nombre_usuario, ' ', usuario_detalle.apellido_paterno, ' ', usuario_detalle.apellido_materno) as nombre_completo, 
+            usuario_detalle.rut,
+            usuario_detalle.nacimiento,
+            usuario_detalle.correo,
+            usuario_detalle.telefono
+            FROM alumno 
+            INNER JOIN usuario ON usuario.id = alumno.alumno
+            INNER JOIN usuario_detalle ON usuario_detalle.idusuario = usuario.id
+            WHERE alumno.habilitado = :habilitado LIMIT 10;
+[21-03-2022 20:42:41] :: DURACIÓN : 0.039075136184692 s
+[21-03-2022 20:42:41] :: DURACIÓN TOTAL : 0.054580926895142 s
+[21-03-2022 20:42:58] :: INICIA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:42:58] :: TERMINA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:42:58] :: DURACIÓN : 0.0048670768737793 s
+[21-03-2022 20:42:58] :: TERMINA QUERY :: SELECT 
+            alumno.id, 
+            CONCAT(usuario_detalle.nombre_usuario, ' ', usuario_detalle.apellido_paterno, ' ', usuario_detalle.apellido_materno) as nombre_completo, 
+            usuario_detalle.rut,
+            usuario_detalle.nacimiento,
+            usuario_detalle.correo,
+            usuario_detalle.telefono
+            FROM alumno 
+            INNER JOIN usuario ON usuario.id = alumno.alumno
+            INNER JOIN usuario_detalle ON usuario_detalle.idusuario = usuario.id
+            WHERE alumno.habilitado = :habilitado LIMIT 10;
+[21-03-2022 20:42:58] :: DURACIÓN : 0.037954092025757 s
+[21-03-2022 20:42:58] :: DURACIÓN TOTAL : 0.052504062652588 s
+[21-03-2022 20:43:02] :: INICIA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:43:02] :: TERMINA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:43:02] :: DURACIÓN : 0.0039529800415039 s
+[21-03-2022 20:43:02] :: TERMINA QUERY :: SELECT 
+            alumno.id, 
+            CONCAT(usuario_detalle.nombre_usuario, ' ', usuario_detalle.apellido_paterno, ' ', usuario_detalle.apellido_materno) as nombre_completo, 
+            usuario_detalle.rut,
+            usuario_detalle.nacimiento,
+            usuario_detalle.correo,
+            usuario_detalle.telefono
+            FROM alumno 
+            INNER JOIN usuario ON usuario.id = alumno.alumno
+            INNER JOIN usuario_detalle ON usuario_detalle.idusuario = usuario.id
+            WHERE alumno.habilitado = :habilitado LIMIT 10;
+[21-03-2022 20:43:02] :: DURACIÓN : 0.0077440738677979 s
+[21-03-2022 20:43:02] :: DURACIÓN TOTAL : 0.021065950393677 s
+[21-03-2022 20:43:33] :: INICIA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:43:33] :: TERMINA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:43:33] :: DURACIÓN : 0.0042178630828857 s
+[21-03-2022 20:43:33] :: TERMINA QUERY :: SELECT 
+            alumno.id, 
+            CONCAT(usuario_detalle.nombre_usuario, ' ', usuario_detalle.apellido_paterno, ' ', usuario_detalle.apellido_materno) as nombre_completo, 
+            usuario_detalle.rut,
+            usuario_detalle.nacimiento,
+            usuario_detalle.correo,
+            usuario_detalle.telefono
+            FROM alumno 
+            INNER JOIN usuario ON usuario.id = alumno.alumno
+            INNER JOIN usuario_detalle ON usuario_detalle.idusuario = usuario.id
+            WHERE alumno.habilitado = :habilitado LIMIT 10;
+[21-03-2022 20:43:33] :: DURACIÓN : 0.0084640979766846 s
+[21-03-2022 20:43:33] :: DURACIÓN TOTAL : 0.023237943649292 s
+[21-03-2022 20:43:57] :: INICIA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:43:57] :: TERMINA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:43:57] :: DURACIÓN : 0.0044398307800293 s
+[21-03-2022 20:43:57] :: TERMINA QUERY :: SELECT 
+            alumno.id, 
+            CONCAT(usuario_detalle.nombre_usuario, ' ', usuario_detalle.apellido_paterno, ' ', usuario_detalle.apellido_materno) as nombre_completo, 
+            usuario_detalle.rut,
+            usuario_detalle.nacimiento,
+            usuario_detalle.correo,
+            usuario_detalle.telefono
+            FROM alumno 
+            INNER JOIN usuario ON usuario.id = alumno.alumno
+            INNER JOIN usuario_detalle ON usuario_detalle.idusuario = usuario.id
+            WHERE alumno.habilitado = :habilitado LIMIT 10;
+[21-03-2022 20:43:57] :: DURACIÓN : 0.046990156173706 s
+[21-03-2022 20:43:57] :: DURACIÓN TOTAL : 0.06109094619751 s
+[21-03-2022 20:43:58] :: INICIA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:43:58] :: TERMINA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:43:58] :: DURACIÓN : 0.0046100616455078 s
+[21-03-2022 20:43:58] :: TERMINA QUERY :: SELECT 
+            alumno.id, 
+            CONCAT(usuario_detalle.nombre_usuario, ' ', usuario_detalle.apellido_paterno, ' ', usuario_detalle.apellido_materno) as nombre_completo, 
+            usuario_detalle.rut,
+            usuario_detalle.nacimiento,
+            usuario_detalle.correo,
+            usuario_detalle.telefono
+            FROM alumno 
+            INNER JOIN usuario ON usuario.id = alumno.alumno
+            INNER JOIN usuario_detalle ON usuario_detalle.idusuario = usuario.id
+            WHERE alumno.habilitado = :habilitado LIMIT 10;
+[21-03-2022 20:43:58] :: DURACIÓN : 0.042407989501953 s
+[21-03-2022 20:43:58] :: DURACIÓN TOTAL : 0.056519031524658 s
+[21-03-2022 20:43:59] :: INICIA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:43:59] :: TERMINA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:43:59] :: DURACIÓN : 0.004194974899292 s
+[21-03-2022 20:43:59] :: TERMINA QUERY :: SELECT 
+            alumno.id, 
+            CONCAT(usuario_detalle.nombre_usuario, ' ', usuario_detalle.apellido_paterno, ' ', usuario_detalle.apellido_materno) as nombre_completo, 
+            usuario_detalle.rut,
+            usuario_detalle.nacimiento,
+            usuario_detalle.correo,
+            usuario_detalle.telefono
+            FROM alumno 
+            INNER JOIN usuario ON usuario.id = alumno.alumno
+            INNER JOIN usuario_detalle ON usuario_detalle.idusuario = usuario.id
+            WHERE alumno.habilitado = :habilitado LIMIT 10;
+[21-03-2022 20:43:59] :: DURACIÓN : 0.035449981689453 s
+[21-03-2022 20:43:59] :: DURACIÓN TOTAL : 0.04942798614502 s
+[21-03-2022 20:44:02] :: INICIA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:44:02] :: TERMINA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:44:02] :: DURACIÓN : 0.0050950050354004 s
+[21-03-2022 20:44:02] :: TERMINA QUERY :: SELECT 
+            alumno.id, 
+            CONCAT(usuario_detalle.nombre_usuario, ' ', usuario_detalle.apellido_paterno, ' ', usuario_detalle.apellido_materno) as nombre_completo, 
+            usuario_detalle.rut,
+            usuario_detalle.nacimiento,
+            usuario_detalle.correo,
+            usuario_detalle.telefono
+            FROM alumno 
+            INNER JOIN usuario ON usuario.id = alumno.alumno
+            INNER JOIN usuario_detalle ON usuario_detalle.idusuario = usuario.id
+            WHERE alumno.habilitado = :habilitado LIMIT 10;
+[21-03-2022 20:44:02] :: DURACIÓN : 0.0071201324462891 s
+[21-03-2022 20:44:02] :: DURACIÓN TOTAL : 0.021750211715698 s
+[21-03-2022 20:44:17] :: INICIA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:44:17] :: TERMINA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:44:17] :: DURACIÓN : 0.0045311450958252 s
+[21-03-2022 20:44:17] :: TERMINA QUERY :: SELECT 
+            alumno.id, 
+            CONCAT(usuario_detalle.nombre_usuario, ' ', usuario_detalle.apellido_paterno, ' ', usuario_detalle.apellido_materno) as nombre_completo, 
+            usuario_detalle.rut,
+            usuario_detalle.nacimiento,
+            usuario_detalle.correo,
+            usuario_detalle.telefono
+            FROM alumno 
+            INNER JOIN usuario ON usuario.id = alumno.alumno
+            INNER JOIN usuario_detalle ON usuario_detalle.idusuario = usuario.id
+            WHERE alumno.habilitado = :habilitado LIMIT 10;
+[21-03-2022 20:44:17] :: DURACIÓN : 0.014016151428223 s
+[21-03-2022 20:44:17] :: DURACIÓN TOTAL : 0.030366182327271 s
+[21-03-2022 20:44:19] :: INICIA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:44:19] :: TERMINA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:44:19] :: DURACIÓN : 0.0051479339599609 s
+[21-03-2022 20:44:19] :: TERMINA QUERY :: SELECT 
+            alumno.id, 
+            CONCAT(usuario_detalle.nombre_usuario, ' ', usuario_detalle.apellido_paterno, ' ', usuario_detalle.apellido_materno) as nombre_completo, 
+            usuario_detalle.rut,
+            usuario_detalle.nacimiento,
+            usuario_detalle.correo,
+            usuario_detalle.telefono
+            FROM alumno 
+            INNER JOIN usuario ON usuario.id = alumno.alumno
+            INNER JOIN usuario_detalle ON usuario_detalle.idusuario = usuario.id
+            WHERE alumno.habilitado = :habilitado LIMIT 10;
+[21-03-2022 20:44:19] :: DURACIÓN : 0.04145884513855 s
+[21-03-2022 20:44:19] :: DURACIÓN TOTAL : 0.056137800216675 s
+[21-03-2022 20:44:56] :: INICIA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:44:56] :: TERMINA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:44:56] :: DURACIÓN : 0.0052998065948486 s
+[21-03-2022 20:44:56] :: TERMINA QUERY :: SELECT 
+            alumno.id, 
+            CONCAT(usuario_detalle.nombre_usuario, ' ', usuario_detalle.apellido_paterno, ' ', usuario_detalle.apellido_materno) as nombre_completo, 
+            usuario_detalle.rut,
+            usuario_detalle.nacimiento,
+            usuario_detalle.correo,
+            usuario_detalle.telefono
+            FROM alumno 
+            INNER JOIN usuario ON usuario.id = alumno.alumno
+            INNER JOIN usuario_detalle ON usuario_detalle.idusuario = usuario.id
+            WHERE alumno.habilitado = :habilitado LIMIT 10;
+[21-03-2022 20:44:56] :: DURACIÓN : 0.010009050369263 s
+[21-03-2022 20:44:56] :: DURACIÓN TOTAL : 0.041240930557251 s
+[21-03-2022 20:50:55] :: INICIA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:50:55] :: TERMINA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:50:55] :: DURACIÓN : 0.0048620700836182 s
+[21-03-2022 20:50:55] :: TERMINA QUERY :: SELECT 
+            alumno.id, 
+            CONCAT(usuario_detalle.nombre_usuario, ' ', usuario_detalle.apellido_paterno, ' ', usuario_detalle.apellido_materno) as nombre_completo, 
+            usuario_detalle.rut,
+            usuario_detalle.nacimiento,
+            usuario_detalle.correo,
+            usuario_detalle.telefono
+            FROM alumno 
+            INNER JOIN usuario ON usuario.id = alumno.alumno
+            INNER JOIN usuario_detalle ON usuario_detalle.idusuario = usuario.id
+            WHERE alumno.habilitado = :habilitado LIMIT 10;
+[21-03-2022 20:50:55] :: DURACIÓN : 0.061437845230103 s
+[21-03-2022 20:50:55] :: ERROR: EN LA CONSULTA A LA BASE DE DATOS DE ORIGEN: PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\examen\evalPHP\Clases\Alumno.php:93
+Stack trace:
+#0 C:\xampp\htdocs\examen\evalPHP\Clases\Alumno.php(93): PDOStatement->execute()
+#1 C:\xampp\htdocs\examen\evalPHP\testCLI.php(51): Alumno->alumnosHabilitadosCurso(1, 0)
+#2 {main}
+[21-03-2022 20:51:16] :: INICIA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:51:16] :: TERMINA QUERY :: SELECT * FROM alumno WHERE colegio = :schoolID LIMIT 10;
+[21-03-2022 20:51:16] :: DURACIÓN : 0.0050859451293945 s
+[21-03-2022 20:51:16] :: TERMINA QUERY :: SELECT 
+            alumno.id, 
+            CONCAT(usuario_detalle.nombre_usuario, ' ', usuario_detalle.apellido_paterno, ' ', usuario_detalle.apellido_materno) as nombre_completo, 
+            usuario_detalle.rut,
+            usuario_detalle.nacimiento,
+            usuario_detalle.correo,
+            usuario_detalle.telefono
+            FROM alumno 
+            INNER JOIN usuario ON usuario.id = alumno.alumno
+            INNER JOIN usuario_detalle ON usuario_detalle.idusuario = usuario.id
+            WHERE alumno.habilitado = :habilitado LIMIT 10;
+[21-03-2022 20:51:16] :: DURACIÓN : 0.070204973220825 s
+[21-03-2022 20:51:16] :: TERMINA QUERY :: SELECT 
+            alumno.id, 
+            CONCAT(usuario_detalle.nombre_usuario, ' ', usuario_detalle.apellido_paterno, ' ', usuario_detalle.apellido_materno) as nombre_completo, 
+            usuario_detalle.rut,
+            usuario_detalle.nacimiento,
+            usuario_detalle.correo,
+            usuario_detalle.telefono
+            FROM alumno 
+            INNER JOIN usuario ON usuario.id = alumno.alumno
+            INNER JOIN usuario_detalle ON usuario_detalle.idusuario = usuario.id
+            WHERE alumno.habilitado = :habilitado 
+            AND alumno.curso = :curso 
+            LIMIT 10;
+[21-03-2022 20:51:16] :: DURACIÓN : 0.10128998756409 s
+[21-03-2022 20:51:16] :: DURACIÓN TOTAL : 0.20286083221436 s

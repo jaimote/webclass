@@ -7,10 +7,16 @@ ini_set('max_execution_time', 0);
 include_once __DIR__ . '/Clases/Logger.php';
 include_once __DIR__ . '/Clases/DBConn.php';
 include_once __DIR__ . '/Clases/Queries.php';
+include_once __DIR__ . '/Clases/Alumno.php';
 
 $config = parse_ini_file(__DIR__ . "/config.ini", true);
 
 define('_IDCOLEGIO_', intval($argv[1]));
+define('_HABILITADO_', intval($argv[2]));
+define('_CURSO_', intval($argv[3]));
+
+// define('_IDCOLEGIO_', 23);
+// define('_HABILITADO_', 1);
 
 $start = microtime(true);
 
@@ -25,7 +31,6 @@ $logger->setErrorFilename(_IDCOLEGIO_ . '-' . $config['LOG']['ERRORFILENAME']);
 $logger->setQueryFilename(_IDCOLEGIO_ . '-' . $config['LOG']['QUERYFILENAME']);
 $logger->enableDateOnFileName($config['LOG']['DATEONFILENAME']);
 
-
 $paramsDB =  array(
     'host' => $config['DB']['HOST'],
     'port' => $config['DB']['PORT'],
@@ -38,8 +43,12 @@ $dbConn = new DBconn();
 $dB = $dbConn->conectMySQL($paramsDB);
 
 $q = new Queries($logger, $dB);
-
 print_r(PHP_EOL . json_encode($q->getStudents(_IDCOLEGIO_)) . PHP_EOL);
+
+$q = new Alumno($logger, $dB);
+print_r(PHP_EOL . json_encode($q->alumnosHabilitados(_HABILITADO_)) . PHP_EOL);
+
+print_r(PHP_EOL . json_encode($q->alumnosHabilitadosCurso(_HABILITADO_, _CURSO_)) . PHP_EOL);
 
 $end = microtime(true);
 $total = $end - $start;

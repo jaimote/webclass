@@ -18,7 +18,8 @@ class DBConn
             $connection->exec("set names utf8mb4");
             $connection->exec("SET session wait_timeout=14400");
             $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            return $connection;
+
+            return $connection;           
         } catch (PDOException $p) {
             return $p;
         }

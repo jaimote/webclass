@@ -1,0 +1,5 @@
+[21-03-2022 20:50:55] :: ERROR: EN LA CONSULTA A LA BASE DE DATOS DE ORIGEN: PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\examen\evalPHP\Clases\Alumno.php:93
+Stack trace:
+#0 C:\xampp\htdocs\examen\evalPHP\Clases\Alumno.php(93): PDOStatement->execute()
+#1 C:\xampp\htdocs\examen\evalPHP\testCLI.php(51): Alumno->alumnosHabilitadosCurso(1, 0)
+#2 {main}
