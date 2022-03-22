@@ -84,6 +84,12 @@
                     API Evaluación Desarrollo
                 </div>
             </div>
+
+            @section('content')
+                <example-component></example-component>
+            @endsection
+
+
         </div>
     </body>
 </html>
